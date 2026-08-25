@@ -1,0 +1,37 @@
+#Author: Enrico Veraldi
+#Galactic Concordance -- Nicholls et al. 2017 (Table 1)
+#Base reference: Nieva & Przybilla 2012 (29 local B stars, photosperic)
+#reference fot Li, Be, B: meteoritic (Lodders et al. 2009)
+#NOTE no grains
+#NOTE fiducial point zeta_O = 1, i.e. 12+log(O/H) = 8.760, Z_GC = 0.014254
+HYDROGEN	1.0000e+00
+HELIUM      9.77239E-02
+LITHIUM     1.89671E-09
+BERYLLIUM   2.08930E-11
+BORON       6.41210E-10
+CARBON      2.64850E-04
+NITROGEN    6.16675E-05
+OXYGEN      5.75440E-04
+FLUORINE    2.75423E-08
+NEON        1.23027E-04
+SODIUM      1.62181E-06
+MAGNESIUM   3.63078E-05
+ALUMINIUM   2.69153E-06
+SILICON     3.16228E-05
+PHOSPHORUS  2.57040E-07
+SULPHUR     1.31826E-05
+CHLORINE    1.77828E-07
+ARGON       2.51189E-06
+POTASSIUM   1.09648E-07
+CALCIUM     2.08930E-06
+SCANDIUM    1.44544E-09
+TITANIUM    8.51138E-08
+VANADIUM    7.76247E-09
+CHROMIUM    4.16869E-07
+MANGANESE   2.63027E-07
+IRON        3.31131E-05
+COBALT      8.51138E-08
+NICKEL      1.58489E-06
+COPPER      1.51356E-08
+ZINC        3.63078E-08
+****************************************************

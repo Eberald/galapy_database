@@ -1,0 +1,42 @@
+# Author: Enrico Veraldi
+# Scaling abd-Z
+# Nicholls et al. 2017
+scaling_scheme: nicholls17
+fiducial_log_OH: -3.240 # log(O/H) = 8.760 - 12
+breakpoints:
+  chi0: -0.50 # = chi0(Fe) + Xi_Fe(O) = -1.0 + 0.5
+  chi1: +0.25 # = chi1(Fe) * chi0(O)/chi0(Fe) = 0.5 * 0.5
+#table 2 Nichols+17
+xi_O:
+  Li: 0.000
+  Be: 0.000
+  B: 0.000
+  C: -0.437
+  O: 0.000
+  F: 0.000
+  Ne: 0.000
+  Na: -0.300
+  Mg: -0.100
+  Al: -0.100
+  Si: -0.100
+  P: -0.500
+  S: -0.100
+  Cl: 0.000
+  Ar: 0.000
+  K: -0.100
+  Ca: -0.150
+  Sc: -0.250
+  Ti: -0.150
+  V: -0.500
+  Cr: -0.500
+  Mn: -0.500
+  Fe: -0.500
+  Co: -0.500
+  Ni: -0.500
+  Cu: -0.500
+  Zn: -0.300
+special:
+#two breaks not three for N (Eq.9).
+N: {form: primary_secondary, a: -0.764, b: -0.082}
+#He eq.4 linear from primordial abbunadnce estimation
+He: {form: he_enrichment, A: 8.3506e-2, B: 0.17031}
