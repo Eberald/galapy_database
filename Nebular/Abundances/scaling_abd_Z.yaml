@@ -36,7 +36,7 @@ xi_O:
   Cu: -0.500
   Zn: -0.300
 special:
-#two breaks not three for N (Eq.9).
-N: {form: primary_secondary, a: -0.764, b: -0.082}
-#He eq.4 linear from primordial abbunadnce estimation
-He: {form: he_enrichment, A: 8.3506e-2, B: 0.17031}
+  #two breaks not three for N (Eq.9).
+  N: {form: primary_secondary, a: -0.764, b: -0.082}
+  #He eq.4 linear from primordial abbunadnce estimation
+  He: {form: he_enrichment, A: 8.3503e-2, B: 0.17031}

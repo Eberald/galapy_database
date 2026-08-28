@@ -4,6 +4,7 @@
 
 #
 .idea/
+.junie/
 
 # User-specific stuff
 .idea/**/workspace.xml
