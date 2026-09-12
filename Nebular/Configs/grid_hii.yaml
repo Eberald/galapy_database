@@ -1,0 +1,46 @@
+# Author: Enrico Veraldi
+# HII region grid charter
+
+sector: hii
+cloudy_version: C25.00                                # Cloudy Version
+ssp_library: parsec22.NT                              # SSP
+
+sed_lambda_cut_A: 1.0e6                               # A, cut in red part
+
+lhs:
+  n_samples: 100                                      # n_samples points -> x48 nodes SSP [9000]
+  seed: 42                                            # seed reproducibility
+  optimization: random-cd                             # scipy.stats.qmc.LatinHypercube optimization
+
+# axes of the HII grid, order matters
+axes:
+  - {name: logU,          min: -4.0,  max: -1.0, prior: uniform}
+  - {name: lognH_HII,     min:  0.0,  max:  4.0, prior: uniform}
+  - {name: log_zeta_O,    min: -2.3,  max:  0.5, prior: uniform}
+  - {name: z_CMB,         min:  0.0,  max: 12.0, prior: uniform}
+  - {name: xi_d,          min:  0.001, max: 0.5, prior: uniform}
+  - {name: f_esc_target,  min:  0.0,  max:  0.9, prior: uniform}
+  - {name: F_star,        min:  0.0,  max:  1.0, prior: uniform}
+
+# the 48 nodes SSP
+nodes:
+  n_tau_ssp: 8
+  n_zstar: 6
+
+#Chemistry
+chemistry:
+  fiducial:  Nebular/Abundances/GC.abn
+  scaling:   Nebular/Abundances/scaling_abd_Z.yaml
+  zeta_map:  Nebular/Abundances/zeta_Z.npz
+  depletion: jenkins2009
+  axis: log_zeta_O
+
+dust:
+  xi_d_MW: 0.43                                       # gauge g(xi_d): (1/162)/Z_GC
+  grains: ISM                                         # grains inizialization in CLOUDY input file
+
+lines:
+  master_list: Configs/Lines/hii_full.yaml
+  official_reference:                                 # Versioned with dataset and hash
+    - configs/lines/LineList_HII.dat
+    - configs/lines/LineList_PDR.dat
