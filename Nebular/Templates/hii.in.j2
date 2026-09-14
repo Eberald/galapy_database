@@ -1,0 +1,49 @@
+# Author: Enrico Veraldi
+# Template input Cloudy for HII regions
+title HII id={{ job_id }}
+hden {{ lognH_HII }}
+ionization parameter {{ logU }}
+# Thermic floor from CMB
+CMB {{ z_CMB }}
+# Chemistry Nicholls+17
+abundances "GC.abn"
+# Depletion Jenkins 2009
+metals deplete jenkins 2009 {{ F_star }}
+# Metallicity axes, log(zeta_O), zeta_O = (O/H)/(O/H)_GC
+metals {{ log_zeta_O }} log
+# non uniform scaling Delta_O(X, zeta_O) in DEX (Nicholls Eq. 8/9/4)
+{{ element_scale_block }}
+# DUST-TO-METAL (xi_d)
+grains ISM {{ grain_scale }} linear
+# NO PAH, destroyed by photons in HII
+# so no qheat for performances (accettable with no PAH)
+no grain qheat
+# Input SED from SSP
+table SED "{{ sed_file }}"
+# GEOMETRY
+sphere
+# STOPPING CRITERIA
+# - column density corresponding to f_esc
+# - temperature 4000K
+stop column density {{ log_N_stop }}
+stop temperature 4000K
+# double optical depth for closed geometry (sphere here)
+double optical depths
+# turbulence and CR galactic rate (marginal in HII, avoid chemistry CR free at ionisation front)
+turbulence 5 km/s
+cosmic rays background
+iterate to convergence
+#
+# SAVE
+# continuum
+save last continuum "hii_{{ job_id }}.con" units angstrom no hash
+# scomposition grains emission (diagnostic)
+save last continuum grain "hii_{{ job_id }}.con_grain" units angstrom no hash
+#
+# LINES
+save last line list "hii_{{ job_id }}.lines" "hii_lines.dat" emergent absolute column no hash
+#
+# DUST (density of dust)
+save last grain abundance "hii_{{ job_id }}.dusa" no hash
+# grain temperature (diagnostic)
+save last grain temperature "hii_{{ job_id }}.grain_temp" no hash

@@ -42,5 +42,5 @@ dust:
 lines:
   master_list: Configs/Lines/hii_full.yaml
   official_reference:                                 # Versioned with dataset and hash
-    - configs/lines/LineList_HII.dat
-    - configs/lines/LineList_PDR.dat
+    - Configs/Lines_Ref/LineList_HII.dat
+    - Configs/Lines_Ref/LineList_PDR.dat
