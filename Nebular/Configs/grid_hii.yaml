@@ -8,7 +8,7 @@ ssp_library: parsec22.NT                              # SSP
 sed_lambda_cut_A: 1.0e6                               # A, cut in red part
 
 lhs:
-  n_samples: 100                                      # n_samples points -> x48 nodes SSP [9000]
+  n_samples: 9000                                      # n_samples points -> x48 nodes SSP [9000]
   seed: 42                                            # seed reproducibility
   optimization: random-cd                             # scipy.stats.qmc.LatinHypercube optimization
 
