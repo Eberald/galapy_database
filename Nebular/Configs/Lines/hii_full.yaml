@@ -1,0 +1,68 @@
+# Author: Enrico Veraldi
+# Master line list — HII region
+
+lines:
+  - {label: 'H  1', wl: '6562.80', unit: 'A', name: 'Halpha', group: HI}
+  - {label: 'H  1', wl: '4861.32', unit: 'A', name: 'Hbeta', group: HI}
+  - {label: 'H  1', wl: '4340.46', unit: 'A', name: 'Hgamma', group: HI}
+  - {label: 'H  1', wl: '4101.73', unit: 'A', name: 'Hdelta', group: HI}
+  - {label: 'H  1', wl: '1215.67', unit: 'A', name: 'Lyalpha', group: HI}
+  - {label: 'H  1', wl: '1.87510', unit: 'm', name: 'Paalpha', group: HI}
+  - {label: 'H  1', wl: '1.28181', unit: 'm', name: 'Pabeta', group: HI}
+  - {label: 'H  1', wl: '2.16553', unit: 'm', name: 'Brgamma', group: HI}
+  - {label: 'H  1', wl: '4.05115', unit: 'm', name: 'Bralpha', group: HI}
+  - {label: 'He 1', wl: '3888.64', unit: 'A', name: 'HeI_3889', group: HeI}
+  - {label: 'Blnd', wl: '5875.66', unit: 'A', name: 'HeI_5876', group: HeI}
+  - {label: 'Blnd', wl: '1.08302', unit: 'm', name: 'HeI_10830', group: HeI}
+  - {label: 'he 2', wl: '1640.41', unit: 'A', name: 'HeII_1640', group: HeII}
+  - {label: 'he 2', wl: '4685.68', unit: 'A', name: 'HeII_4686', group: HeII}
+  - {label: 'blnd', wl: '1549', unit: '', name: 'CIV_1549', group: UV}
+  - {label: 'blnd', wl: '1909', unit: '', name: 'CIII_1909', group: UV}
+  - {label: 'O  3', wl: '1660.81', unit: '', name: 'OIII]_1661', group: UV}
+  - {label: 'O  3', wl: '1666.15', unit: '', name: 'OIII]_1666', group: UV}
+  - {label: 'blnd', wl: '1240', unit: '', name: 'NV_1240', group: UV}
+  - {label: 'blnd', wl: '1750', unit: '', name: 'NIII]_1750', group: UV}
+  - {label: 'blnd', wl: '1486', unit: '', name: 'NIV]_1486', group: UV}
+  - {label: 'blnd', wl: '2326', unit: '', name: 'CII]_2326', group: UV}
+  - {label: 'si 3', wl: '1892.03', unit: '', name: 'SiIII]_1892', group: UV}
+  - {label: 'blnd', wl: '1397', unit: '', name: 'SiIV_1397', group: UV}
+  - {label: 'blnd', wl: '1402', unit: '', name: 'OIV]_1402', group: UV}
+  - {label: 'blnd', wl: '2798', unit: '', name: 'MgII_2798', group: UV}
+  - {label: 'o  3', wl: '5006.84', unit: '', name: 'OIII_5007', group: OIII}
+  - {label: 'o  3', wl: '4958.91', unit: '', name: 'OIII_4959', group: OIII}
+  - {label: 'O  3', wl: '4363.21', unit: '', name: 'OIII_4363', group: OIII}
+  - {label: 'n  2', wl: '6583.45', unit: '', name: 'NII_6583', group: NII}
+  - {label: 'n  2', wl: '5754.59', unit: 'A', name: 'NII_5755', group: NII}
+  - {label: 'O  2', wl: '3726.03', unit: '', name: 'OII_3726', group: OII}
+  - {label: 'O  2', wl: '3728.81', unit: '', name: 'OII_3729', group: OII}
+  - {label: 'blnd', wl: '3727', unit: '', name: 'OII_3727_blend', group: OII}
+  - {label: 's  2', wl: '6716.44', unit: '', name: 'SII_6716', group: SII}
+  - {label: 's  2', wl: '6730.82', unit: '', name: 'SII_6731', group: SII}
+  - {label: 'S  2', wl: '4068.6', unit: '', name: 'SII_4069', group: SII}
+  - {label: 'S  2', wl: '4076.35', unit: '', name: 'SII_4076', group: SII}
+  - {label: 'blnd', wl: '6300', unit: '', name: 'OI_6300', group: OI}
+  - {label: 'o  1', wl: '6363.78', unit: '', name: 'OI_6364', group: OI}
+  - {label: 'ne 3', wl: '3868.76', unit: '', name: 'NeIII_3869', group: NeIII}
+  - {label: 'S  3', wl: '9068.62', unit: '', name: 'SIII_9069', group: SIII}
+  - {label: 'S  3', wl: '9530.62', unit: '', name: 'SIII_9532', group: SIII}
+  - {label: 'Ar 3', wl: '7135.79', unit: '', name: 'ArIII_7136', group: ArIII}
+  - {label: 'n  1', wl: '5200.26', unit: '', name: 'NI_5200', group: NI}
+  - {label: 'c  2', wl: '157.636', unit: 'm', name: 'CII_158', group: dual_origin}
+  - {label: 'ne 2', wl: '12.8101', unit: 'm', name: 'NeII_12.8', group: dual_origin}
+  - {label: 'si 2', wl: '34.8046', unit: 'm', name: 'SiII_34.8', group: dual_origin}
+  - {label: 'n  2', wl: '121.769', unit: 'm', name: 'NII_122', group: NII}
+  - {label: 'n  2', wl: '205.283', unit: 'm', name: 'NII_205', group: NII}
+  - {label: 'o  3', wl: '88.3323', unit: 'm', name: 'OIII_88', group: OIII}
+  - {label: 'o  3', wl: '51.8004', unit: 'm', name: 'OIII_52', group: OIII}
+  - {label: 'o  1', wl: '63.1679', unit: 'm', name: 'OI_63', group: OI}
+  - {label: 'o  1', wl: '145.495', unit: 'm', name: 'OI_145', group: OI}
+  - {label: 'ne 3', wl: '15.5509', unit: 'm', name: 'NeIII_15.5', group: NeIII}
+  - {label: 'ne 3', wl: '36.0036', unit: 'm', name: 'NeIII_36', group: NeIII}
+  - {label: 'S  3', wl: '18.7078', unit: 'm', name: 'SIII_18.7', group: SIII}
+  - {label: 'S  3', wl: '33.4704', unit: 'm', name: 'SIII_33.5', group: SIII}
+  - {label: 's  4', wl: '10.5076', unit: 'm', name: 'SIV_10.5', group: SIV}
+  - {label: 'o  4', wl: '25.8863', unit: 'm', name: 'OIV_25.9', group: OIV}
+  - {label: 'n  3', wl: '57.3238', unit: 'm', name: 'NIII_57', group: NIII}
+  - {label: 'Ar 3', wl: '8.98898', unit: 'm', name: 'ArIII_9.0', group: ArIII}
+  - {label: 'Ar 3', wl: '21.8253', unit: 'm', name: 'ArIII_21.8', group: ArIII}
+  - {label: 'Ar 2', wl: '6.98337', unit: 'm', name: 'ArII_7.0', group: ArII}

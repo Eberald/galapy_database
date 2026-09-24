@@ -1,0 +1,28 @@
+# Author: Enrico Veraldi
+# Master line list — PDR
+
+lines:
+  - {label: 'c  2', wl: '157.636', unit: 'm', name: 'CII_158', group: dual_origin}
+  - {label: 'ne 2', wl: '12.8101', unit: 'm', name: 'NeII_12.8', group: dual_origin}
+  - {label: 'si 2', wl: '34.8046', unit: 'm', name: 'SiII_34.8', group: dual_origin}
+  - {label: 'c  1', wl: '609.590', unit: 'm', name: 'CI_609', group: CI}
+  - {label: 'c  1', wl: '370.269', unit: 'm', name: 'CI_370', group: CI}
+  - {label: 'O  1', wl: '63.1679', unit: 'm', name: 'OI_63', group: OI}
+  - {label: 'O  1', wl: '145.495', unit: 'm', name: 'OI_145', group: OI}
+  - {label: 'CO', wl: '2600.05', unit: 'm', name: 'CO_1-0', group: CO}
+  - {label: 'CO', wl: '1300.05', unit: 'm', name: 'CO_2-1', group: CO}
+  - {label: 'CO', wl: '866.727', unit: 'm', name: 'CO_3-2', group: CO}
+  - {label: 'CO', wl: '650.074', unit: 'm', name: 'CO_4-3', group: CO}
+  - {label: 'CO', wl: '325.137', unit: 'm', name: 'CO_8-7', group: CO}
+  - {label: 'S  3', wl: '18.7078', unit: 'm', name: 'SIII_18.7', group: SIII}
+  - {label: 'S  3', wl: '33.4704', unit: 'm', name: 'SIII_33.5', group: SIII}
+  - {label: 's  4', wl: '10.5076', unit: 'm', name: 'SIV_10.5', group: SIV}
+  - {label: 'ne 3', wl: '15.5509', unit: 'm', name: 'NeIII_15.5', group: NeIII}
+  - {label: 'ne 3', wl: '36.0036', unit: 'm', name: 'NeIII_36', group: NeIII}
+  - {label: 'Fe 2', wl: '1.64355', unit: 'm', name: 'FeII_1.64', group: FeII}
+  - {label: 'H  1', wl: '6562.80', unit: 'A', name: 'Halpha', group: HI}
+  - {label: 'H  1', wl: '4861.32', unit: 'A', name: 'Hbeta', group: HI}
+  - {label: 'H  1', wl: '2.16553', unit: 'm', name: 'Brgamma', group: HI}
+  - {label: 'H  1', wl: '4.05115', unit: 'm', name: 'Bralpha', group: HI}
+  - {label: 'blnd', wl: '6300', unit: '', name: 'OI_6300', group: OI}
+  - {label: 'n  1', wl: '5200.26', unit: '', name: 'NI_5200', group: NI}
