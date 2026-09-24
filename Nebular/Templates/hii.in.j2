@@ -2,9 +2,11 @@
 # Template input Cloudy for HII regions
 title HII id={{ job_id }}
 hden {{ lognH_HII }}
-ionization parameter {{ logU }}
 # Thermic floor from CMB
 CMB {{ z_CMB }}
+# Input SED from SSP
+table SED "{{ sed_file }}"
+ionization parameter {{ logU }}
 # Chemistry Nicholls+17
 abundances "GC.abn"
 # Depletion Jenkins 2009
@@ -18,8 +20,6 @@ grains ISM {{ grain_scale }} linear
 # NO PAH, destroyed by photons in HII
 # so no qheat for performances (accettable with no PAH)
 no grain qheat
-# Input SED from SSP
-table SED "{{ sed_file }}"
 # GEOMETRY
 sphere
 # STOPPING CRITERIA
