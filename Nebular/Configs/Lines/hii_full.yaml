@@ -35,7 +35,6 @@ lines:
   - {label: 'n  2', wl: '5754.59', unit: 'A', name: 'NII_5755', group: NII}
   - {label: 'O  2', wl: '3726.03', unit: 'A', name: 'OII_3726', group: OII}
   - {label: 'O  2', wl: '3728.81', unit: 'A', name: 'OII_3729', group: OII}
-  - {label: 'blnd', wl: '3727', unit: 'A', name: 'OII_3727_blend', group: OII}
   - {label: 's  2', wl: '6716.44', unit: 'A', name: 'SII_6716', group: SII}
   - {label: 's  2', wl: '6730.82', unit: 'A', name: 'SII_6731', group: SII}
   - {label: 'S  2', wl: '4068.6', unit: 'A', name: 'SII_4069', group: SII}
@@ -66,6 +65,15 @@ lines:
   - {label: 'Ar 3', wl: '8.98898', unit: 'm', name: 'ArIII_9.0', group: ArIII}
   - {label: 'Ar 3', wl: '21.8253', unit: 'm', name: 'ArIII_21.8', group: ArIII}
   - {label: 'Ar 2', wl: '6.98337', unit: 'm', name: 'ArII_7.0', group: ArII}
+  - { label: 'N  2', wl: '6548.05', unit: 'A', name: 'NII_6548', group: NII}
+  - {label: 'Ne 3', wl: '3967.47', unit: 'A', name: 'NeIII_3967', group: NeIII}
+  - {label: 'H  1', wl: '3970.07', unit: 'A', name: 'Hepsilon', group: HI}
+  - {label: 'H  1', wl: '3889.05', unit: 'A', name: 'H8', group: HI}
+  - {label: 'H  1', wl: '3835.38', unit: 'A', name: 'H9', group: HI}
+  - {label: 'H  1', wl: '3797.90', unit: 'A', name: 'H10', group: HI}
+  - {label: 'H  1', wl: '1.09381', unit: 'm', name: 'Pagamma', group: HI}
+  - {label: 'blnd', wl: '7325', unit: '', name: 'OII_7325', group: OII}
+  - {label: 'blnd', wl: '2471', unit: '', name: 'OII_2471', group: OII}
 # the pumped part
 pump:
   NV_1240:   [{label: 'N  5', wl: '1238.82', unit: 'A'}, {label: 'N  5', wl: '1242.80', unit: 'A'}]
