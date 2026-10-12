@@ -32,6 +32,9 @@ double optical depths
 # turbulence and CR galactic rate (marginal in HII, avoid chemistry CR free at ionisation front)
 turbulence 5 km/s
 cosmic rays background
+#no continuum pumping of the H I Lyman lines: photospheric Lyman absorption in the stellar SED, and with
+# `sphere` the transmitted continuum has no absorption troughs (Hazy 1 sec. 12.4.12, Hazy 2 sec. 2.11)
+database H-like Lyman pumping off
 iterate to convergence
 #
 # SAVE
