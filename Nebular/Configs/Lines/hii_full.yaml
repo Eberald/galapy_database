@@ -66,3 +66,9 @@ lines:
   - {label: 'Ar 3', wl: '8.98898', unit: 'm', name: 'ArIII_9.0', group: ArIII}
   - {label: 'Ar 3', wl: '21.8253', unit: 'm', name: 'ArIII_21.8', group: ArIII}
   - {label: 'Ar 2', wl: '6.98337', unit: 'm', name: 'ArII_7.0', group: ArII}
+# the pumped part
+pump:
+  NV_1240:   [{label: 'N  5', wl: '1238.82', unit: 'A'}, {label: 'N  5', wl: '1242.80', unit: 'A'}]
+  SiIV_1397: [{label: 'Si 4', wl: '1393.75', unit: 'A'}, {label: 'Si 4', wl: '1402.77', unit: 'A'}]
+  CIV_1549:  [{label: 'C  4', wl: '1548.19', unit: 'A'}, {label: 'C  4', wl: '1550.77', unit: 'A'}]
+  MgII_2798: [{label: 'Mg 2', wl: '2795.53', unit: 'A'}, {label: 'Mg 2', wl: '2802.71', unit: 'A'}]
