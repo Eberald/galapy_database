@@ -9,8 +9,8 @@ table SED "{{ sed_file }}"
 ionization parameter {{ logU }}
 # Chemistry Nicholls+17
 abundances "GC.abn"
-# Depletion Jenkins 2009
-metals deplete jenkins 2009 {{ F_star }}
+# Depletion Jenkins 2009 depletion factors <= 1
+metals deplete jenkins 2009 {{ F_star }} limit 1
 # Metallicity axes, log(zeta_O), zeta_O = (O/H)/(O/H)_GC
 metals {{ log_zeta_O }} log
 # non uniform scaling Delta_O(X, zeta_O) in DEX (Nicholls Eq. 8/9/4)
