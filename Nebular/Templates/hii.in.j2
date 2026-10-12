@@ -45,6 +45,8 @@ save last continuum grain "hii_{{ job_id }}.con_grain" units angstrom no hash
 #
 # LINES
 save last line list "hii_{{ job_id }}.lines" "hii_lines.dat" emergent absolute column no hash
+# intrinsic 'Pump' entries of the resonance blends (zero in emergent), removed by the parser
+save last line list "hii_{{ job_id }}.pump" "hii_pump.dat" absolute column no hash
 #
 # DUST (density of dust)
 save last grain abundance "hii_{{ job_id }}.dusa" no hash
