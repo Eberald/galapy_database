@@ -24,9 +24,13 @@ no grain qheat
 sphere
 # STOPPING CRITERIA
 # - column density corresponding to f_esc
-# - temperature 4000K
+# - ionization front: H+/H below 1e-3 (stop pfrac, a value <= 0 is a log), the boundary
+#   of the HII region
+# - temperature floor 1000 K: behind the front of dusty ionization-bounded clouds H+/H settles at ~5e-3, so
+#   the pfrac stop never fires; the floor ends the run where the cold neutral gas (PDR sector) begins
 stop column density {{ log_N_stop }}
-stop temperature 4000K
+stop pfrac -3
+stop temperature 1000K
 # turbulence and CR galactic rate (marginal in HII, avoid chemistry CR free at ionisation front)
 turbulence 5 km/s
 cosmic rays background
@@ -43,7 +47,7 @@ save last continuum grain "hii_{{ job_id }}.con_grain" units angstrom no hash
 #
 # LINES
 save last line list "hii_{{ job_id }}.lines" "hii_lines.dat" emergent absolute column no hash
-# intrinsic 'Pump' entries of the resonance blends (zero in emergent), removed by the parser
+# intrinsic 'Pump' entries of the pumped lines (zero in emergent), removed by the parser
 save last line list "hii_{{ job_id }}.pump" "hii_pump.dat" absolute column no hash
 #
 # DUST (density of dust)
