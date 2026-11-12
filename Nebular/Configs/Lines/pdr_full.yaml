@@ -26,3 +26,15 @@ lines:
   - {label: 'H  1', wl: '4.05115', unit: 'm', name: 'Bralpha', group: HI}
   - {label: 'blnd', wl: '6300', unit: '', name: 'OI_6300', group: OI}
   - {label: 'n  1', wl: '5200.26', unit: '', name: 'NI_5200', group: NI}
+# the pumped part: every line of the master list below 10 um that CLOUDY transfers
+#, i.e. every line with a '<label> Pump' entry; a blend lists its components, a single line itself.
+# The pumped part is stellar light scattered in the line. Beyond 10 um the 'Pump' entry is the excitation by
+# the CMB, and can exceed the line itself: the CMB contrast is applied at runtime, never removed here.
+pump:
+  FeII_1.64: [{label: 'Fe 2', wl: '1.64355', unit: 'm'}]
+  Halpha:    [{label: 'H  1', wl: '6562.80', unit: 'A'}]
+  Hbeta:     [{label: 'H  1', wl: '4861.32', unit: 'A'}]
+  Brgamma:   [{label: 'H  1', wl: '2.16553', unit: 'm'}]
+  Bralpha:   [{label: 'H  1', wl: '4.05115', unit: 'm'}]
+  OI_6300:   [{label: 'O  1', wl: '6300.30', unit: 'A'}, {label: 'O  1', wl: '6363.78', unit: 'A'}, {label: 'O  1', wl: '6391.73', unit: 'A'}]
+  NI_5200:   [{label: 'n  1', wl: '5200.26', unit: ''}]
