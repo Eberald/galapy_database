@@ -1,0 +1,56 @@
+# Author: Enrico Veraldi
+# Template input Cloudy for PDRs
+title PDR id={{  job_id  }}
+hden {{ lognH_PDR }}
+# Thermic floor for CMB
+CMB {{ z_cmb }}
+# Input SED from SSP, truncated at the Lyman limit (lambda >= 911.76 A): no ionizing photon
+table SED "{{ sed_file }}"
+# FUV normalization G0
+intensity {{  log_I_FUV }} range 0.440992 to 0.99946
+# Chemistry Nicholls+17
+abundances "GC.abn"
+# Depletion Jenkins 2009 depletion factors <= 1
+metals deplete jenkins 2009 {{ F_star }} limit 1
+# Metallicity axes, log(zeta_O), zeta_O = (O/H)/(O/H)_GC
+metals {{ log_zeta_O }} log
+# non uniform scaling Delta_O(X, zeta_O) in DEX (Nicholls Eq. 8/9/4)
+{{ element_scale_block }}
+# DUST-TO-METAL (xi_d)
+grains ISM {{ grain_scale }} linear
+# PAH, abundance following neutral hydrogen
+# pah_scale = PAH_SCALE_MW x grain_scale: 'grains PAH 10' + 'set PAH "H,H2"' = Galactic PAH/H
+grains PAH {{ pah_scale }} linear
+set PAH "H,H2"
+# GEOMETRY
+sphere
+# turbulence and CR galactic rate
+turbulence 5 km/s
+cosmic rays background {{ log_chi_CR }}
+# STOPPING CRITERIA
+# - visual extinction
+# - temperature floot
+stop AV {{ A_V_PDR }}
+stop temperature 10 linear
+# no continuum pumping of the H I Lyman lines: photospheric Lyman absorption already in the stellar SED
+database H-like Lyman pumping off
+iterate to convergence
+#
+# SAVE
+# continuum
+save last continuum "pdr_{{ job_id }}.con" units angstrom no hash
+# scomposition grains emission (diagnostic)
+save last continuum grain "pdr_{{ job_id }}.con_grain" units angstrom no hash
+#
+# LINES
+save last line list "pdr_{{ job_id }}.lines" "pdr_lines.dat" emergent absolute column no hash
+#
+# DUST (density of dust)
+save last grain abundance "pdr_{{ job_id }}.dusa" no hash
+# grain temperature (diagnostic)
+save last grain temperature "pdr_{{ job_id }}.grain_temp" no hash
+#
+# PDR structure, heating and cooling (diagnostic)
+save last PDR "pdr_{{ job_id }}.pdr" no hash
+save last heating "pdr_{{ job_id }}.heat" no hash
+save last cooling "pdr_{{ job_id }}.cool" no hash
